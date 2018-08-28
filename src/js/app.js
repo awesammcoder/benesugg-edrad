@@ -49,7 +49,7 @@
 
     loadPage(page, loadController){
       $.ajax({
-        url: `/pages/${page}.pot`,
+        url: `pages/${page}.pot`,
         type: 'GET',
         success: page => {
           this.container.innerHTML = page;
