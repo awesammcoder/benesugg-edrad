@@ -1,0 +1,7 @@
+.px5 {
+  margin-bottom: 5px !important;
+}
+
+tr:hover {
+  cursor: pointer !important;
+}

@@ -1,0 +1,41 @@
+<div class="container">
+  <h3>Recent Documents</h3>
+  <br>
+
+  <div class="row">
+    <div class="col-md-6">
+      <label>Summary</label>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <p>For Checking: <b id="for-checking"></b></p>
+          <p>Returned: <b id="for-returned"></b></p>
+        </div>
+
+        <div class="col-md-6">
+          <p>For Approved: <b id="for-approved"></b></p>
+          <p>For Distribution: <b id="for-distribution"></b></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label>Filters</label>
+      <hr>
+    </div>
+  </div>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Document No.</th>
+        <th>Revision Letter</th>
+        <th>Originator</th>
+        <th>Department</th>
+        <th>Date/Time</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="menu-list"></tbody>
+  </table>
+</div>

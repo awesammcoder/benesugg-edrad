@@ -1,0 +1,40 @@
+<div class="container">
+  <h3>Receive Document</h3>
+  <hr>
+
+  <form action="">
+    <div class="row">
+      <div class="col-md-6 col-md-push-6">
+        <select class="form-control px5" id="document-type">
+          <optgroup label="Document Type">
+            <option value="" selected disabled>Select Document Type</option>
+            <option value="0">New Document</option>
+            <option value="1">Revised Document</option>
+          </optgroup>
+        </select>
+
+        <input class="form-control px5" id="document-id" type="text" placeholder="Document ID">
+        <label for="">Next Revision Letter</label>
+        <input class="form-control px5" id="next-revision-letter" type="text" placeholder="Will generate new revision letter">
+        <label>Date and Time Received</label>
+        <div class="row px5">
+          <div class="col-md-6">
+            <input class="form-control" id="document-date" type="date" placeholder="Date...">
+          </div>
+          <div class="col-md-6">
+            <input class="form-control" id="document-time" type="text" placeholder="Time...">
+          </div>
+        </div>
+
+        <label>Document Origin</label>
+        <input class="form-control px5" id="document-originator" type="text" placeholder="Originator">
+        <input class="form-control px5" id="document-department" type="text" placeholder="Department">
+
+        <button class="btn btn-primary btn-block btn-lg" id="document-submit" type="button" >Submit</button>
+      </div>
+    </div>
+  </form>
+
+
+
+</div>

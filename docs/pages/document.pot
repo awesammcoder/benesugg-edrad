@@ -1,0 +1,87 @@
+<div class="container-fluid">
+  <h3>Document Info</h3>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+
+      <h5>Details</h5>
+
+      <div class="row">
+        <div class="col-md-8">
+          <label>Document No.</label>
+          <input class="form-control" id="document-no" type="text">
+        </div>
+        <div class="col-md-4">
+          <label>Revision Letter</label>
+          <input class="form-control" id="revision-letter" type="text">
+        </div>
+      </div>
+
+      <label>Document Type</label>
+      <input class="form-control" id="document-type" type="text">
+
+      <label>Date and Time Received</label>
+      <div class="row px5">
+        <div class="col-md-6">
+          <input class="form-control" id="document-received-date" type="date" placeholder="Date...">
+        </div>
+        <div class="col-md-6">
+          <input class="form-control" id="document-received-time" type="text" placeholder="Time...">
+        </div>
+      </div>
+
+      <label>Document Origin</label>
+      <input class="form-control px5" id="document-originator" type="text" placeholder="Originator">
+      <input class="form-control px5" id="document-department" type="text" placeholder="Department">
+
+      <label>Correction Remarks</label>
+      <textarea class="form-control px5" id="document-remarks" placeholder="Remarks..."></textarea>
+
+      <label>Status</label>
+      <select class="form-control px5" id="document-status">
+        <optgroup label="Document Type">
+          <option value="0">For Checking</option>
+          <option value="1">Returned</option>
+          <option value="2">For Approved</option>
+          <option value="3">For Distribution</option>
+        </optgroup>
+      </select>
+
+      <label>Date and Time Processed</label>
+      <div class="row px5">
+        <div class="col-md-6">
+          <input class="form-control" id="document-date" type="date" placeholder="Date...">
+        </div>
+        <div class="col-md-6">
+          <input class="form-control" id="document-time" type="text" placeholder="Time...">
+        </div>
+      </div>
+
+      <label>c/o</label>
+      <input class="form-control px5" id="document-co" type="text" placeholder="To whom...">
+
+      <button id="document-submit" class="btn btn-primary btn-lg btn-block">Save</button>
+    </div>
+    <div class="col-md-6">
+      <h5>History</h5>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Revision Letter</th>
+            <th>Remarks</th>
+            <th>Date/Time</th>
+            <th>From Status</th>
+            <th>To Status</th>
+            <th>c/o</th>
+          </tr>
+        </thead>
+        <tbody id="history-table" >
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <br>
+
+</div>
