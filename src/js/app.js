@@ -168,10 +168,10 @@
 
     normalizeDocuments(){
       var documents = [], document;
-      app.summary[this.statuses[0]] = 0;
-      app.summary[this.statuses[1]] = 0;
-      app.summary[this.statuses[2]] = 0;
-      app.summary[this.statuses[3]] = 0;
+      app.summary[app.statuses[0]] = 0;
+      app.summary[app.statuses[1]] = 0;
+      app.summary[app.statuses[2]] = 0;
+      app.summary[app.statuses[3]] = 0;
 
       for(var i in documentStorage.data){
         document = documentStorage.data[i];
