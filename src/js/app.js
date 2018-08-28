@@ -259,7 +259,8 @@
       var fragments = '', d;
 
       data.reverse().forEach(h => {
-        d = new Date(h.datetime).toGMTString();
+        d = new Date(h.datetime);
+        d = `${d.toLocaleDateString()}  ${d.toLocaleTimeString()}`
         fragments += `<tr>
         <td>${h.revision_letter || ''}</td>
         <td>${h.remarks}</td>
